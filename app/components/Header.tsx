@@ -1,3 +1,4 @@
+// pages/Header.tsx
 'use client';
 import React, { useState } from "react";
 import {
@@ -58,11 +59,9 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <li>
-              <button className={`text-${color} focus:outline-none`}>
-                Services
-              </button>
-            </li>
+            <button className={`text-${color} focus:outline-none`}>
+              Services
+            </button>
             {/* Dropdown Menu */}
             {isMenuOpen && (
               <div className="absolute bg-white text-black shadow-lg rounded-lg transition-all duration-300 ease-in-out w-64">
