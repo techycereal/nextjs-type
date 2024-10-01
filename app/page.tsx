@@ -7,14 +7,17 @@ import {
 import { Button } from "@/components/ui/button";
 import Header from "./components/Header";
 import { services } from "./constants";
+import Link from "next/link";
 
 // Define the props for ServiceCard
 interface ServiceCardProps {
   title: string;
   image: string;
+  name: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, image }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ name, title, image }) => {
+
   return (
     <div className="relative group">
       {/* Service Image */}
@@ -27,12 +30,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, image }) => {
       {/* Button inside the image */}
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100">
         <Button className="px-4 py-2 font-semibold rounded-md">
-          View {title}
+          <Link href={`/services/${name}`}>View {title}</Link>
         </Button>
       </div>
     </div>
   );
 };
+
 
 const Home: React.FC = () => {
   return (
@@ -73,7 +77,8 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {Object.keys(services).map((key) => (
               <ServiceCard
-                key={key} 
+                key={key}
+                name={key} 
                 title={services[key].name}
                 image={services[key].image}
               />

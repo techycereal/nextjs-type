@@ -127,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
                   <ul className="flex flex-col space-y-1">
                     <li>
                       <a
-                        href="#massage"
+                        href="/services/massage-therapy"
                         className="hover:text-gray-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -136,7 +136,7 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
                     </li>
                     <li>
                       <a
-                        href="#facial"
+                        href="/services/facial-treatment"
                         className="hover:text-gray-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -145,7 +145,7 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
                     </li>
                     <li>
                       <a
-                        href="#body"
+                        href="/services/body-treatments"
                         className="hover:text-gray-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -154,7 +154,7 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
                     </li>
                     <li>
                       <a
-                        href="#manicure"
+                        href="/services/manicure"
                         className="hover:text-gray-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -163,7 +163,7 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
                     </li>
                     <li>
                       <a
-                        href="#aromatherapy"
+                        href="/services/aromatherapy"
                         className="hover:text-gray-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
@@ -176,12 +176,12 @@ const Header: React.FC<HeaderProps> = ({ color }) => {
             </Accordion>
 
             <li>
-              <a href="aboutus" onClick={() => setIsMenuOpen(false)}>
+              <a href="/aboutus" onClick={() => setIsMenuOpen(false)}>
                 About Us
               </a>
             </li>
             <li>
-              <a href="#location" onClick={() => setIsMenuOpen(false)}>
+              <a href="/location" onClick={() => setIsMenuOpen(false)}>
                 Location
               </a>
             </li>
