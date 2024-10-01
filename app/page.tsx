@@ -66,7 +66,7 @@ const Home: React.FC = () => {
             <div className="text-center text-white">
               <h1 className="text-5xl font-bold">Relax, Rejuvenate, and Refresh</h1>
               <p className="mt-4 text-lg">Experience world-class treatments in the heart of tranquility</p>
-              <Link href={'/aboutus'}><Button className="w-40 h-12 mt-10">Learn More</Button></Link>
+              <Link href={'/aboutus'}><Button className="w-40 h-12 mt-10">Learn About Our Spa</Button></Link>
             </div>
           </div>
         </div>
