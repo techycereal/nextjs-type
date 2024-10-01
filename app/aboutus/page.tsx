@@ -14,8 +14,8 @@ const AboutMe = () => {
         />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-center">
           <div className="text-white z-10">
-            <h1 className="text-4xl font-bold">About Me</h1>
-            <p className="mt-4 text-lg">A brief introduction about my journey and skills.</p>
+            <h1 className="text-4xl font-bold">About Us</h1>
+            <p className="mt-4 text-lg">A brief introduction about who we are and what we do</p>
           </div>
         </div>
       </section>
