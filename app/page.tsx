@@ -29,9 +29,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ name, title, image }) => {
 
       {/* Button inside the image */}
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 transition-opacity duration-300 opacity-100 md:opacity-0 md:group-hover:opacity-100">
+      <Link href={`/services/${name}`}>
         <Button className="px-4 py-2 font-semibold rounded-md">
-          <Link href={`/services/${name}`}>View {title}</Link>
+          View {title}
         </Button>
+      </Link>
       </div>
     </div>
   );
@@ -64,7 +66,7 @@ const Home: React.FC = () => {
             <div className="text-center text-white">
               <h1 className="text-5xl font-bold">Relax, Rejuvenate, and Refresh</h1>
               <p className="mt-4 text-lg">Experience world-class treatments in the heart of tranquility</p>
-              <Button className="w-40 h-12 mt-10">Learn More</Button>
+              <Link href={'/aboutus'}><Button className="w-40 h-12 mt-10">Learn More</Button></Link>
             </div>
           </div>
         </div>
